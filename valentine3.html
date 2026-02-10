@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Love Confession</title>
+  <style>
+    body { text-align:center; margin-top:100px; font-family: 'Georgia'; background-color: mistyrose; }
+    button { padding:15px 30px; font-size:18px; background:crimson; color:white; border:none; border-radius:8px; cursor:pointer; }
+    button:hover { background:firebrick; }
+    #message { margin-top:20px; font-size:24px; color:darkred; }
+  </style>
+</head>
+<body>
+  <h1>💌 HAPPY VALENTINE'S DAY 💌</h1>
+  <button onclick="confessLove()">Secured with NEHA ❤️</button>
+  <p id="message"></p>
+
+  <!-- Background romantic music -->
+  <audio id="loveMusic" src="romantic.mp3" preload="auto"></audio>
+
+  <script>
+    function confessLove() {
+      document.getElementById("message").innerText = "There’s a certain stillness I only feel when I’m with you—a sense that, no matter how fast the world is moving, we’re exactly where we’re supposed to be. You’ve become the rhythm of my days and the best part of my nights. I love the way we can be ourselves without saying a word, and how you make even the simplest days feel like a celebration. You are my greatest adventure and my favorite place to rest. Happy Valentine’s Day to the girl who has my whole heart....❤️";
+      document.getElementById("loveMusic").play();
+    }
+  </script>
+</body>
+</html>
